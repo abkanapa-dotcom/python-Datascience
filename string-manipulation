@@ -52,24 +52,36 @@ for i in freq_split:
         print(freq)
 print(freq)'''
 # Q5. Extract domain names (without .com, .in) from the email list.
-emails = ["user1@gmail.com", "admin@yahoo.com", "hr@amazon.in"]
+'''emails = ["user1@gmail.com", "admin@yahoo.com", "hr@amazon.in"]
+email = "".join(emails)
 
 print("".join(emails).split("@")[1].split(".")[0])
+print(list((email.split("@")[1].split(".")[0] for email in emails)))'''
 # Q6. Remove currency symbols and convert prices to integers.
+prices = ["$120", "₹450", "€300"]
 # Q7. Clean product names:
 
 # Remove special characters
 # Convert to lowercase
 # Replace separators with space
-
+products = [" iPhone-14 ", "Samsung_Galaxy", " OnePlus-11 "]
 # Level 3: Analytics & Interview-Oriented
+
 # Q8. Extract year from each date string.
+dates = ["2023-05-10", "2022-11-01", "2021-01-25"]
 # Q9. Identify valid phone numbers (10 digits only).
+phones = ["9876543210", "12345", "98765abc10", "9999999999"]
 # Q10. Mask sensitive card information leaving only last 4 digits visible.
+data = "User card number is 4567-8912-3456"
 # Q11. Extract hashtags from the text (without #).
+text = "Loving #Python and #DataAnalytics for #CareerGrowth"
                                      
 #                                      Level 4: Feature Engineering & SQL Thinking
 # Q12. Remove duplicate words while preserving order.
+s = "data data science science python"
 # Q13. Split full names into first and last names.
+names = ["Ekta Negi", "Rahul Sharma", "Anita Singh"]
 # Q14. Categorize reviews into positive, negative, or neutral.
+reviews = ["excellent product", "bad quality", "average item"]
 # Q15. Remove stopwords (is, a, this) from the sentence.
+s = "this is a data analyst interview question"
