@@ -1,0 +1,116 @@
+# Basic comprehension
+# Create a list of squares of numbers 1–10.
+# list = [1,2,3,4,5]
+# new_list = print([i**2 for i in list])
+
+# Create a tuple of cubes of numbers 1–10.
+# t=(1,2,3,4,5,6,7,8,9,10)
+
+# new_t = tuple(j**3 for j in t)
+# new_tl= list(j**3 for j in t)
+# print(new_t)
+# print(new_tl)
+
+# Create a list of even numbers from 1–20 using list comprehension.
+"""new_list = list(range(21))
+print(new_list)
+prime_list = list(print(i) for i in new_list if i%2==0)
+print (prime_list)"""
+# Create a tuple labeling numbers 1–10 as 'Even' or 'Odd'.
+'''t=tuple(range(11))
+print(t)
+even_odd = tuple("even" if i%2==0 else "odd" for i in t )
+print(even_odd)'''
+
+# Create a list of strings ‘Yes’ if number >5 else ‘No’ for 1–10.
+'''list_s= list(range(11))
+# print(list_s)
+list_string_g5 = list("yes" if i >5 else "no" for i in list_s)
+print(list_string_g5)'''
+
+# Conditional / Ternary operations
+# Create a list: square the number if it is odd, else cube it, for numbers 1–10.
+'''list_sq_q = list(range(1,11))
+# print(list_sq_q)
+lsq=list(i**2 if i%2==0 else i**3 for i in list_sq_q)
+print(lsq)'''
+
+# Create a tuple: ‘High’ if number >7, ‘Medium’ if number >3, else ‘Low’, for 1–10.
+t=tuple(range(1,11))
+print(t)
+hml=tuple("high" if i>7 elif i>3 "medium" else "low" for i in t)
+print(hml)
+
+# Label numbers 1–15 as ‘Fizz’ if divisible by 3, ‘Buzz’ if divisible by 5, ‘FizzBuzz’ if divisible by both, else number as string.
+
+# Create a list of 'Prime'/'Non-Prime' labels for numbers 1–20.
+
+# Create a tuple of 'Pass'/'Fail' labels for marks [45, 60, 30, 80] with passing mark 50.
+
+# Nested list/tuple comprehension
+# Create a 3×3 nested list of numbers 1–9.
+
+# Create a 3×3 tuple of numbers 1–9.
+
+# Create a 3×3 nested list labeling each number as ‘Even’ or ‘Odd’.
+
+# Flatten a nested list [[1,2],[3,4],[5,6]] using list comprehension.
+
+# Flatten a nested tuple ((1,2),(3,4),(5,6)) and create a tuple of squares.
+
+# Mixed / Advanced
+# Create a tuple of strings representing numbers 1–20 as 'Small' (<5), 'Medium' (5–10), 'Large' (>10).
+
+# From a nested list [[1,2,3],[4,5,6]], create a list of only even numbers.
+
+# From a nested tuple ((1,2,3),(4,5,6)), create a tuple of only numbers divisible by 3.
+
+# Create a 4×4 nested list representing a chessboard pattern (0,1) using comprehension.
+
+# From a string "Hello World", create a list of vowels in uppercase.
+
+# # Create a tuple of the lengths of each word in a sentence "Python is fun for data science".
+
+# Basic Dictionary Comprehension
+# Create a dictionary of numbers 1–10 with squares as values.
+
+# Create a dictionary of numbers 1–10 labeled 'Even' or 'Odd'.
+
+# Create a dictionary from the list ['apple','banana','cherry'] with word lengths as values.
+
+# Create a dictionary of numbers 1–10 where even numbers are squared and odd numbers are cubed.
+
+# From a dictionary {'a':1,'b':2,'c':3}, create a new dictionary with values doubled.
+
+# Conditional / Filtering in Dictionary Comprehension
+# Create a dictionary of numbers 1–20 with values squared, but include only even numbers.
+
+# From a dictionary of marks {'Alice':45,'Bob':80,'Charlie':60}, create a new dictionary of only passing marks ≥50.
+
+# Create a dictionary of numbers 1–15 labeled 'Fizz', 'Buzz', 'FizzBuzz', or the number itself as string.
+
+# Create a dictionary of numbers 1–10 labeled 'High' if >7, 'Medium' if >3, else 'Low'.
+
+# From a dictionary of numbers 1–10, create a new dictionary with values as 'Even-Square' or 'Odd-Cube' strings.
+
+# Nested / Advanced Dictionary Comprehension
+# Create a 3×3 multiplication table as a nested dictionary.
+
+# From a nested list [[1,2],[3,4]], create a dictionary with row index as key and sum of row as value.
+
+# Flatten a nested dictionary {'A':{'x':1,'y':2}, 'B':{'x':3,'y':4}} into {('A','x'):1, ('A','y'):2,...}.
+
+# From a string "hello", create a dictionary with character counts.
+
+# Create a dictionary of numbers 1–20 labeled 'Low', 'Medium', 'High' using ternary conditions in dictionary comprehension.
+
+# Real-world / Interview Level
+# From a dictionary of products with prices, create a new dictionary with discounted price if price >1000.
+
+# Create a dictionary from a list of tuples [('a',2),('b',5),('c',7)] with key:value mapping squared values.
+
+# From a list of strings, create a dictionary mapping string to reversed string.
+
+# Create a dictionary from a list of words, but include only words starting with a vowel.
+
+# From a nested dictionary of students and marks, create a dictionary with total marks for each student.
