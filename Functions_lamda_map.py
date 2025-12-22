@@ -70,20 +70,37 @@ length = string_lengt()
 print(length)
 '''
 # Write a function that counts vowels in a string.
-def vowel_count():
+'''def vowel_count():
     vowels=['a','e','i','o','u']
     vowel_count=0
     return (vowel_count+1 for char in input("Enter String: ") if char in vowels)
 final = vowel_count()
 print(final)
+'''
 # Write a function that reverses a string.
-
+'''def reverse_string():
+    return reversed(input("Enter the string: "))
+final = "".join(reverse_string())
+print(final)
+'''
 # Write a function that converts Celsius to Fahrenheit.
-
+'''def celcius_farenheit():
+    return (int(input("Enter the Celcius: ")) * 9/5) + 32
+final = celcius_farenheit()
+print(final)'''
 # Write a function that calculates the area of a circle.
-
+'''import math
+def area_circle():
+    return math.pi*((int(input("area of circle: ")))**2)
+final = area_circle()
+print(final)
+'''
 # Write a function that returns the factorial of a number.
-
+def factoril():
+    fact=1
+    numberz = int(input("Ener the Number: "))
+        if numberz !=1 or numberz !=0:
+            fact= fact*(fact-1)
 # Write a function that checks if a number is prime.
 
 # Write a function that sums all numbers in a list.
