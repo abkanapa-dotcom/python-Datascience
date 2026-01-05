@@ -1,0 +1,13 @@
+10 python exercises on each below concept with atleast 40 lines of code each program
+classes and objects ,
+class methods and class attributes,
+static methods,
+Encapsulation,
+inheritence, 
+abstraction,
+method overriding, 
+super(), 
+polymorphism,
+dundermethods (__init__,__str__,__new__,__repr__,__eq__)
+decorators,
+property decorators
