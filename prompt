@@ -9,5 +9,6 @@ method overriding,
 super(), 
 polymorphism,
 dundermethods (__init__,__str__,__new__,__repr__,__eq__)
-decorators,
+function decorators and class decorators,
 property decorators
+
