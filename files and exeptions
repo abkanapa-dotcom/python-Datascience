@@ -1,0 +1,141 @@
+'''file01=open("testing.txt",'w')
+file01.write("Hello World")
+file01.close()
+
+file01=open("testing.txt",'r')
+print(file01.read())
+
+file01=open("testing.txt",'w')
+file01.write(" Hello Again")
+file01.close()
+
+file01=open("testing.txt",'r')
+print(file01.read())
+
+print("############################################")
+
+file02=open("testing01.txt",'r+')
+file02.write("Hey Abhilash")
+file02.seek(0)
+print(file02.read())
+
+print("############################################")
+
+file03 = open("testing02.txt",'w')
+file03.write("Hey, iam here again")
+file03.close()
+#file03.seek(0)
+file03=open("testing02.txt",'r')
+print(file03.read())
+
+
+print("############################################")
+import time
+file04 = open("testing02.txt",'w')
+file04.write("Hey, iam file 04 contents")
+if file04.closed != True:
+    #time.sleep(3)
+    print("File Not closed, Please close the file to see the file contents")
+else:
+    
+    print(file04.read())
+file04.close()
+#time.sleep(2.5)
+print("Now the file is closed!!!, content will be revealed in few seconds")
+#time.sleep(2.5)
+file04=open("testing02.txt",'r+')
+#time.sleep(2.5)
+print(file04.read())
+print(file04.closed)
+file04.write(" \nthis is second line")
+print(file04.name)
+print(file04.read())
+file04.name
+file04.close()
+file05=open("testing02.txt",'r')
+print(file05.read())
+file05.close()
+file05 = open("testing02.txt",'a')
+file05.write("\nJust adding!!!")
+file05.close()
+file05=open("testing02.txt",'r')
+print(file05.read())
+#print(file05.tell())
+
+print(file05.tell())
+j=1
+if file05.tell() !=0:
+    file05.seek(0)
+    for i in file05:
+        print(f"line {j} =",i)
+        j += 1
+else:
+    print(f"line {j} =",i)
+    j += 1
+
+print("#################################")
+
+file05=open("testing02.txt",'r')
+print(file05.readline())
+file05.seek(0)
+print(file05.readlines())
+
+print("#################################")
+
+import os
+import shutil
+print(os.getcwd())
+print(os.listdir())
+print(dir(os))
+print(os.path.getsize('testing01.txt'))
+print(os.mkdir('d:/mydir'))
+print(os.mkdir('d:/mydir/dir1'))
+#os.rmdir('d:/mydir')
+shutil.rmtree('d:/mydir/dir1')
+# print(os.mkdir('mydir'))
+# print(os.mkdir('mydir/dir01'))
+#shutil.copy(src,dest)
+#shutil.move(src,dest)
+'''
+data=[["Name","course","fee"],["ajay","ds","20000"],["rahul","da","30000"]]
+for i in data:
+    print(i)
+import csv
+print("#################################")
+
+with open("example.csv",'w') as f:
+    w=csv.writer(f)
+    print(w)
+    for i in data:
+        w.writerow(i)
+with open('example.csv','r') as file:
+    reader_object = csv.reader(file)
+    for i in data:
+        print(i)
+import json
+
+with open('jason.json', 'r', encoding='utf-8') as file2:
+    print(file2.read())
+j_data={
+      "emp_id": 201,
+      "name": "John",
+      "department": "IT",
+      "salary": 60000,
+      "skills": ["Python", "Django", "SQL"]
+    }
+with open("j_file01.json",'w') as file3:
+    j=json.dump(j_data,file3)
+    print(j)
+    # for i in j:
+    #     print(i)
+import io
+with open('io_buffer.txt','wb') as io_file:
+    data_file=io.BufferedWriter(io_file)
+    data_file.write(b"Hello")
+    data_file.write(b'iam abhilash')
+    data_file.write(b"iam a working professional")
+    data_file.seek(0)
+    print(data_file.flush())
+with open('io_buffer.txt', 'rb') as io_file:
+    buffer = io.BufferedReader(io_file)
+    print(buffer.read().decode('utf-8'))
